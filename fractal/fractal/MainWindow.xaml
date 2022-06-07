@@ -1,0 +1,77 @@
+﻿<Window x:Class="fractal.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:fractal"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="2,5,1,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="54*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="66*"/>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="97*"/>
+            <RowDefinition Height="12*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush TileMode="None" Stretch="Fill" ImageSource="/1617406662_54-p-oboi-nebo-estetika-57.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="16*"/>
+            <ColumnDefinition Width="132*"/>
+            <ColumnDefinition Width="80*"/>
+            <ColumnDefinition Width="182*"/>
+            <ColumnDefinition Width="124*"/>
+            <ColumnDefinition Width="98*"/>
+            <ColumnDefinition Width="153*"/>
+            <ColumnDefinition Width="13*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Обдуваемое ветром&#xD;&#xA;фрактальное дерево" Margin="38,6,2,11" FontSize="18" FontFamily="Sitka Display Semibold" Click="Button_Click_5" Grid.Row="6" Grid.Column="5" Grid.ColumnSpan="2"/>
+        <Button Content="Кривая Коха" FontFamily="Sitka Banner Semibold" FontSize="18" Click="Button_Click_1" Grid.Column="4" Grid.Row="7" Margin="89,22,51,21" Grid.ColumnSpan="2"/>
+
+        <Button Content="Треугольник&#xD;&#xA; Серпинского" Margin="18,11,85,11" FontSize="18" FontFamily="Sitka Banner Semibold" Click="Button_Click_3" Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <Button Content="Множество Кантора" Margin="21,19,25,16" FontFamily="Sitka Banner Semibold" FontSize="18" Click="Button_Click_4" Grid.Column="2" Grid.Row="7" Grid.ColumnSpan="2"/>
+        <TextBlock Margin="25,4,76,8" TextWrapping="NoWrap" TextAlignment="Center" FontSize="22" Background="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" FontFamily="Sitka Banner Semibold" Foreground="#FFFDF8F8" Grid.Row="4" Grid.Column="4" Grid.ColumnSpan="3"><Run Language="ru-ru" Text="Шаг 2. "/><Run Text="Выберите свой фрактал"/></TextBlock>
+        <Button x:Name="button1" Grid.Column="3" Content="Выбор начального цвета" Margin="33,6,11,7" Grid.Row="2" FontFamily="Sitka Banner Semibold" FontSize="18" Grid.ColumnSpan="2"/>
+        <TextBlock Margin="54,3,30,7" TextWrapping="NoWrap" TextAlignment="Center" FontSize="22" Background="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" FontFamily="Sitka Banner Semibold" Foreground="#FFFDF8F8" Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="2"><Run Language="ru-ru" Text="Шаг 1. Выбор цвета"/></TextBlock>
+        <Button x:Name="button1_Copy" Grid.Column="3" Content="Выбор конечного цвета" Margin="34,8,10,20" Grid.Row="3" FontFamily="Sitka Banner Semibold" FontSize="18" Grid.ColumnSpan="2"/>
+        <Button Content="Ковер Серпинского" FontFamily="Sitka Banner Semibold" FontSize="18" Click="Button_Click_2" Grid.Column="6" Margin="75,23,20,23" Grid.Row="7" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="startColor" Grid.Column="5" Margin="7,8,17,7" Grid.Row="2">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="#FF0E0404" Offset="0.049"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <Button Background="#FFE92B2B" BorderBrush="#FF0C0707" Height="20" Width="50" Content="FFE92B2B"/>
+            <Button Background="#FF30E322" Height="20" Width="50" Content="FF30E322"/>
+            <Button Background="#FFEFC13F" Height="20" Width="50" Content="FFEFC13F"/>
+            <Button Background="#FF3CF3F0" Height="20" Width="50" Content="FF3CF3F0"/>
+            <Button Background="#FF5553EE" Height="20" Width="50" Content="FF5553EE"/>
+            <Button Background="#FFCE55E6" Height="20" Width="50" Content="FFCE55E6"/>
+            <Button Background="#FFE0467A" Height="20" Width="50" Content="FFE0467A"/>
+        </ComboBox>
+        <ComboBox x:Name="endColor" Grid.Column="5" Margin="9,8,15,22" Grid.Row="3">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="#FF0E0404" Offset="0.049"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <Button Background="#FFE92B2B" BorderBrush="#FF0C0707" Height="20" Width="50" Content="FFE92B2B"/>
+            <Button Background="#FF30E322" Height="20" Width="50" Content="FF30E322"/>
+            <Button Background="#FFEFC13F" Height="20" Width="50" Content="FFEFC13F"/>
+            <Button Background="#FF3CF3F0" Height="20" Width="50" Content="FF3CF3F0"/>
+            <Button Background="#FF5553EE" Height="20" Width="50" Content="FF5553EE"/>
+            <Button Background="#FFCE55E6" Height="20" Width="50" Content="FFCE55E6"/>
+            <Button Background="#FFE0467A" Height="20" Width="50" Content="FFE0467A"/>
+        </ComboBox>
+
+    </Grid>
+</Window>

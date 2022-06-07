@@ -1,0 +1,148 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0-windows7.0": {
+      "Bootstrap.Colorpicker/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Twitter.Bootstrap": "2.2.1",
+          "jQuery": "1.8.2"
+        }
+      },
+      "jQuery/1.8.2": {
+        "type": "package"
+      },
+      "Twitter.Bootstrap/2.2.1": {
+        "type": "package"
+      }
+    }
+  },
+  "libraries": {
+    "Bootstrap.Colorpicker/1.0.0": {
+      "sha512": "McNMhndNfxCUPWFk+0lxOOgPWkbf1wNksfh5m4rCya6RNK8W5MDApep173joiMmyAlwNQrqUL3orY8QmIi1xhQ==",
+      "type": "package",
+      "path": "bootstrap.colorpicker/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bootstrap.colorpicker.1.0.0.nupkg.sha512",
+        "bootstrap.colorpicker.nuspec",
+        "content/Content/bootstrap-colorpicker.css",
+        "content/Content/img/alpha.png",
+        "content/Content/img/hue.png",
+        "content/Content/img/saturation.png",
+        "content/Content/less/colorpicker.less",
+        "content/Scripts/bootstrap-colorpicker.js"
+      ]
+    },
+    "jQuery/1.8.2": {
+      "sha512": "uhcB1DuO8O6WW6wWe7SDn0Rz4vZZPqNJHld10yrtG9Z/l4HiTHBhncn2GWAzF7Yv6hoNC/+kAM/6WMsrIdThWA==",
+      "type": "package",
+      "path": "jquery/1.8.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/jquery-1.8.2-vsdoc.js",
+        "Content/Scripts/jquery-1.8.2.js",
+        "Content/Scripts/jquery-1.8.2.min.js",
+        "Tools/common.ps1",
+        "Tools/install.ps1",
+        "Tools/jquery-1.8.2.intellisense.js",
+        "Tools/uninstall.ps1",
+        "jquery.1.8.2.nupkg.sha512",
+        "jquery.nuspec"
+      ]
+    },
+    "Twitter.Bootstrap/2.2.1": {
+      "sha512": "qGHWk9HSbYAmGRc1kC61i6hOmzd7vlO6ca6QAlAyVCjbtNUuB8uUrXAALJ+mlK0ATIdw8ebgvaCVCd9LmcGB7A==",
+      "type": "package",
+      "path": "twitter.bootstrap/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Content/bootstrap-responsive.css",
+        "content/Content/bootstrap-responsive.min.css",
+        "content/Content/bootstrap.css",
+        "content/Content/bootstrap.min.css",
+        "content/Content/images/glyphicons-halflings-white.png",
+        "content/Content/images/glyphicons-halflings.png",
+        "content/Scripts/bootstrap.js",
+        "content/Scripts/bootstrap.min.js",
+        "twitter.bootstrap.2.2.1.nupkg.sha512",
+        "twitter.bootstrap.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0-windows7.0": [
+      "Bootstrap.Colorpicker >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\vitaminka\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\vitaminka\\Desktop\\fractal\\fractal\\fractal.csproj",
+      "projectName": "fractal",
+      "projectPath": "C:\\Users\\vitaminka\\Desktop\\fractal\\fractal\\fractal.csproj",
+      "packagesPath": "C:\\Users\\vitaminka\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vitaminka\\Desktop\\fractal\\fractal\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\vitaminka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0-windows7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0-windows7.0": {
+        "targetAlias": "net5.0-windows",
+        "dependencies": {
+          "Bootstrap.Colorpicker": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

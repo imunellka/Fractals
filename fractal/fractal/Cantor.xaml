@@ -1,0 +1,37 @@
+﻿<Window x:Class="fractal.Cantor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:fractal"
+        mc:Ignorable="d"
+        Title="Cantor" Height="450" Width="800">
+    <Grid Margin="0,0,0,-1" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="198*"/>
+            <ColumnDefinition Width="318*"/>
+            <ColumnDefinition Width="239*"/>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="Auto" MinWidth="12"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="300*"/>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Canvas x:Name="canvas3" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Margin="18,6,19,6" Grid.ColumnSpan="4"/>
+        <Slider x:Name="slid1" Margin="34,7,20,0" Background="Transparent" BorderBrush="#FF120A0A" Foreground="#FF171212" Maximum="8" Minimum="1" Cursor="Arrow" ValueChanged="slid1_ValueChanged" Grid.Row="1" Grid.ColumnSpan="3" Grid.Column="1"/>
+        <Slider x:Name="slid3" Margin="35,5,19,2" Background="Transparent" BorderBrush="#FF120A0A" Foreground="#FF171212" Maximum="20" Minimum="1" Cursor="Arrow" ValueChanged="slid3_ValueChanged" Grid.Row="2" Grid.ColumnSpan="3" Grid.Column="1"/>
+        <Slider x:Name="slid2" Margin="38,15,16,4" Background="Transparent" BorderBrush="#FF120A0A" Foreground="#FF171212" Maximum="20" Minimum="1" Cursor="Arrow" ValueChanged="slid2_ValueChanged" Grid.Row="3" Grid.ColumnSpan="3" Grid.Column="1"/>
+        <TextBlock TextWrapping="Wrap" FontFamily="Sitka Banner Semibold" FontSize="16" Margin="9,8,4,2" Grid.Row="1" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"><Run Text="Г"/><Run Text="лубин"/><Run Text="а"/><Run Text=" рекурсии [1; 8]"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" FontFamily="Sitka Banner Semibold" FontSize="16" Margin="10,8,14,7" Grid.Row="2" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Text="Длина линий [1;20]"/>
+        <TextBlock TextWrapping="Wrap" FontFamily="Sitka Banner Semibold" FontSize="16" Margin="12,4,18,8" Grid.Row="3" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"><Run Text="Длина "/><Run Text="пробелов [1;20]"/></TextBlock>
+        <StackPanel Margin="0,0,0,32" Grid.RowSpan="2" Grid.ColumnSpan="5" SizeChanged="SizeChanged"/>
+        <Button Content="СОХРАНИТЬ" Margin="20,37,55,0" Grid.Row="3" FontFamily="Sitka Banner Semibold" FontSize="14" Click="Button_Click" Grid.RowSpan="2"/>
+
+
+    </Grid>
+</Window>

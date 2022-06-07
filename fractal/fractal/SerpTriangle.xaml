@@ -1,0 +1,29 @@
+﻿<Window x:Class="fractal.SerpTriangle"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:fractal"
+        mc:Ignorable="d"
+        Title="SerpTriangle" Height="450" Width="800">
+    <Grid Background="Gainsboro" SizeChanged="SizeChanged">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="188*"/>
+            <ColumnDefinition Width="599*"/>
+            <ColumnDefinition Width="9*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="335*"/>
+            <RowDefinition Height="61*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Canvas x:Name="canvas" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Margin="22,21,29,2" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <TextBlock TextWrapping="Wrap" FontFamily="Sitka Banner Semibold" FontSize="16" Margin="24,10,8,11" Grid.Row="2" Grid.Column="1"><Run Text="Выберите глубину рекурсии"/><Run Text=":"/><Run Text=" от 1 до 6"/></TextBlock>
+        <Slider x:Name="slider" Margin="40,24,27,12" Background="Transparent" BorderBrush="#FF120A0A" Foreground="#FF171212" Maximum="6" Minimum="1" Cursor="Arrow" ValueChanged="slider_ValueChanged" Grid.Row="2" Grid.Column="2"/>
+        <Button Content="СОХРАНИТЬ" Margin="17,4,48,7" Grid.Row="3" FontFamily="Sitka Banner Semibold" FontSize="14" Click="Button_Click" Grid.Column="1"/>
+
+    </Grid>
+</Window>

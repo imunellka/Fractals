@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "QO6mZGwXJZ8baPRys98sC3vKIprAKXNaDKgIX2B7I7K/Gd/6wyDC18/sIEPVzaVQa0LTZ7DIhmOkn6g3OOM1SA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vitaminka\\Desktop\\fractal\\fractal\\fractal.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vitaminka\\.nuget\\packages\\bootstrap.colorpicker\\1.0.0\\bootstrap.colorpicker.1.0.0.nupkg.sha512",
+    "C:\\Users\\vitaminka\\.nuget\\packages\\jquery\\1.8.2\\jquery.1.8.2.nupkg.sha512",
+    "C:\\Users\\vitaminka\\.nuget\\packages\\twitter.bootstrap\\2.2.1\\twitter.bootstrap.2.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}

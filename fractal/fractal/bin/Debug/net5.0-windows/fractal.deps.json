@@ -1,0 +1,55 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "fractal/1.0.0": {
+        "dependencies": {
+          "Bootstrap.Colorpicker": "1.0.0"
+        },
+        "runtime": {
+          "fractal.dll": {}
+        }
+      },
+      "Bootstrap.Colorpicker/1.0.0": {
+        "dependencies": {
+          "Twitter.Bootstrap": "2.2.1",
+          "jQuery": "1.8.2"
+        }
+      },
+      "jQuery/1.8.2": {},
+      "Twitter.Bootstrap/2.2.1": {}
+    }
+  },
+  "libraries": {
+    "fractal/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Bootstrap.Colorpicker/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-McNMhndNfxCUPWFk+0lxOOgPWkbf1wNksfh5m4rCya6RNK8W5MDApep173joiMmyAlwNQrqUL3orY8QmIi1xhQ==",
+      "path": "bootstrap.colorpicker/1.0.0",
+      "hashPath": "bootstrap.colorpicker.1.0.0.nupkg.sha512"
+    },
+    "jQuery/1.8.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uhcB1DuO8O6WW6wWe7SDn0Rz4vZZPqNJHld10yrtG9Z/l4HiTHBhncn2GWAzF7Yv6hoNC/+kAM/6WMsrIdThWA==",
+      "path": "jquery/1.8.2",
+      "hashPath": "jquery.1.8.2.nupkg.sha512"
+    },
+    "Twitter.Bootstrap/2.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qGHWk9HSbYAmGRc1kC61i6hOmzd7vlO6ca6QAlAyVCjbtNUuB8uUrXAALJ+mlK0ATIdw8ebgvaCVCd9LmcGB7A==",
+      "path": "twitter.bootstrap/2.2.1",
+      "hashPath": "twitter.bootstrap.2.2.1.nupkg.sha512"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+﻿<Window x:Class="fractal.CochForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:fractal"
+        mc:Ignorable="d"
+        Title="CochForm" Height="450" Width="800">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" SizeChanged="SizeChanged">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="90*"/>
+            <ColumnDefinition Width="303*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="332*"/>
+            <RowDefinition Height="62*"/>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Slider x:Name="slider1" Margin="37,30,47,2" Height="30" Background="Transparent" BorderBrush="#FF120A0A" Foreground="#FF171212" Maximum="5" Minimum="1" Cursor="Arrow" ValueChanged="Slider_ValueChanged" Grid.Row="1" Grid.Column="2"/>
+        <Canvas RenderTransformOrigin="0.252,0.467" Margin="0,-2,0,2" Grid.ColumnSpan="4">
+            <Canvas x:Name="canvas1" Height="311" Width="770" Canvas.Left="11" Canvas.Top="15" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+            <TextBlock Canvas.Left="31" TextWrapping="Wrap" Canvas.Top="344" Height="42" Width="151" FontFamily="Sitka Banner Semibold" FontSize="16"><Run Text="Выберите глубину рекурсии"/><Run Text=":"/><Run Text=" от 1 до 5"/></TextBlock>
+        </Canvas>
+        <Button Content="СОХРАНИТЬ" Margin="13,10,44,7" Grid.Row="2" FontFamily="Sitka Banner Semibold" FontSize="14" Click="Button_Click" Grid.Column="1"/>
+
+    </Grid>
+</Window>

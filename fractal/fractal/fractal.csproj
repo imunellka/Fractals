@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1617406662_54-p-oboi-nebo-estetika-57.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bootstrap.Colorpicker" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="1617406662_54-p-oboi-nebo-estetika-57.jpg" />
+  </ItemGroup>
+
+</Project>
